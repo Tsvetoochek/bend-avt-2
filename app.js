@@ -43,5 +43,5 @@ server.listen(port, hostname, () => {
 });
 
 const collection = db.collection("users");
-count = await collection.countDocuments();
+const count = await collection.countDocuments();
 console.log(`В коллекции users ${count} документа/ов`);
